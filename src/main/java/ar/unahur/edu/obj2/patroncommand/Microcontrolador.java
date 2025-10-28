@@ -3,7 +3,7 @@ package ar.unahur.edu.obj2.patroncommand;
 import java.util.Arrays;
 import java.util.List;
 
-import ar.unahur.edu.obj2.patroncommand.Exepciones.Excepcion;
+import ar.unahur.edu.obj2.patroncommand.Exepciones.EstaElNumeroEnRango;
 import ar.unahur.edu.obj2.patroncommand.command.Operable;
 
 public class Microcontrolador implements Programable {
@@ -58,7 +58,7 @@ public class Microcontrolador implements Programable {
     }
     public void estaEnRango(Integer addr){
          if (addr >= memoria.size() || addr < 0) {
-            throw new Excepcion("La dirección de memoria ingresada está fuera de los límites.");
+            throw new EstaElNumeroEnRango("La dirección de memoria ingresada está fuera de los límites.");
         }
     }
 }

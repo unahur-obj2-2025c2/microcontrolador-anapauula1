@@ -94,5 +94,4 @@ public class MainTest {
         micro.run(operaciones3);
         assertEquals(micro.getAcumuladorB(), 0);
     }
-    
 }

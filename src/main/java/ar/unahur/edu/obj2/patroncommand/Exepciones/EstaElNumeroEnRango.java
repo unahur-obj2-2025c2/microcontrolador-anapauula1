@@ -1,10 +1,10 @@
 package ar.unahur.edu.obj2.patroncommand.Exepciones;
 
-public class Excepcion extends RuntimeException{
+public class EstaElNumeroEnRango extends RuntimeException{
     // contructor por defecto
-    public Excepcion(){}
+    public EstaElNumeroEnRango(){}
     // contructor con mensaje
-    public Excepcion(String mensaje){
+    public EstaElNumeroEnRango(String mensaje){
         super(mensaje);
     }
 }
